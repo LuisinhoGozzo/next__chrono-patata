@@ -5,12 +5,13 @@ const nextConfig: NextConfig = {
     remotePatterns: [
       {
         protocol: "https",
-        hostname: "image.tmdb.org", // Dominio de las imágenes de la API de películas
-        pathname: "/t/p/**", // Ruta de las carpetas de pósters
+        hostname: "image.tmdb.org",
+        port: "",
+        pathname: "/t/p/**",
       },
     ],
   },
-  /* Si tienes otras opciones de configuración, van aquí abajo */
+  /* Cualquier otra opción de configuración que necesites */
 };
 
 export default nextConfig;
